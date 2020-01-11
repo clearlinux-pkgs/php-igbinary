@@ -1,3 +1,30 @@
+3.1.0 2019-12-27
+=======
+
+* Same as 3.1.0b4.
+
+3.1.0b4 2019-12-20
+=======
+
+* Don't call __destruct for objects where deferred __unserialize calls were not started (e.g. due to Serializable::unserialize throwing).
+
+3.1.0b3 2019-12-10
+=======
+
+* Skip over object properties that are uninitialized or unset when serializing, instead of serializing them as null.
+  This is done to avoid Errors when unserializing their values for php 7.4 typed properties.
+
+3.1.0b2 2019-12-09
+=======
+
+* Fix crashes related to unserializing instances of classes with php 7.4 typed properties.
+
+3.1.0b1 2019-12-08
+=======
+
+* Support php 7.4's __serialize/__unserialize the same way serialize()/unserialize() does.
+  This deliberately only supports __serialize/__unserialize in php 7.4, to making switching to/from serialize()/unserialize() as straightforward as possible.
+
 3.0.1 2019-03-20
 =======
 
