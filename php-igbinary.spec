@@ -4,10 +4,10 @@
 #
 Name     : php-igbinary
 Version  : 3.1.2
-Release  : 5
+Release  : 6
 URL      : https://pecl.php.net/get/igbinary-3.1.2.tgz
 Source0  : https://pecl.php.net/get/igbinary-3.1.2.tgz
-Summary  : A drop in replacement for the standard php serializer
+Summary  : PHP igbinary extension
 Group    : Development/Tools
 License  : BSD-3-Clause
 Requires: php-igbinary-lib = %{version}-%{release}
@@ -23,7 +23,6 @@ Summary: dev components for the php-igbinary package.
 Group: Development
 Requires: php-igbinary-lib = %{version}-%{release}
 Provides: php-igbinary-devel = %{version}-%{release}
-Requires: php-igbinary = %{version}-%{release}
 Requires: php-igbinary = %{version}-%{release}
 
 %description dev
@@ -66,4 +65,4 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20180731/igbinary.so
+/usr/lib64/extensions/no-debug-non-zts-20190902/igbinary.so
