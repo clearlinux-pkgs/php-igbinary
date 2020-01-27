@@ -4,7 +4,7 @@
 #
 Name     : php-igbinary
 Version  : 3.1.2
-Release  : 4
+Release  : 5
 URL      : https://pecl.php.net/get/igbinary-3.1.2.tgz
 Source0  : https://pecl.php.net/get/igbinary-3.1.2.tgz
 Summary  : A drop in replacement for the standard php serializer
