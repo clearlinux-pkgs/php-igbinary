@@ -1,3 +1,14 @@
+3.1.6 2020-10-08
+=======
+
+* Fix build failure with older C standard (e.g. building on CentOS 6).
+* Otherwise, identical to 3.1.6RC1.
+
+3.1.6RC1 2020-10-07
+=======
+
+* Fix igbinary_serialize incorrectly deduplicating arrays/objects/references when they were garbage collected/freed during serialization.
+
 3.1.5 2020-09-02
 =======
 
