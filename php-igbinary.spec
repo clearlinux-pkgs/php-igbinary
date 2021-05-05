@@ -4,7 +4,7 @@
 #
 Name     : php-igbinary
 Version  : 3.2.2
-Release  : 15
+Release  : 16
 URL      : https://pecl.php.net/get/igbinary-3.2.2.tgz
 Source0  : https://pecl.php.net/get/igbinary-3.2.2.tgz
 Summary  : PHP igbinary extension
@@ -46,6 +46,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 phpize
+autoupdate
 %configure
 make  %{?_smp_mflags}
 
@@ -65,4 +66,4 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20190902/igbinary.so
+/usr/lib64/extensions/no-debug-non-zts-20200930/igbinary.so
