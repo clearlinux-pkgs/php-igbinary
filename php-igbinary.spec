@@ -4,7 +4,7 @@
 #
 Name     : php-igbinary
 Version  : 3.2.6
-Release  : 23
+Release  : 24
 URL      : https://pecl.php.net/get/igbinary-3.2.6.tgz
 Source0  : https://pecl.php.net/get/igbinary-3.2.6.tgz
 Summary  : PHP igbinary extension
@@ -46,7 +46,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 phpize
-%configure
+%configure --disable-static
 make  %{?_smp_mflags}
 
 %install
