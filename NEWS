@@ -1,3 +1,15 @@
+3.2.8 2022-10-17
+=======
+
+* Fix invalid release artifact name in job to build dlls for https://github.com/igbinary/igbinary
+
+3.2.8 2022-10-16
+=======
+
+* Reduce excessive inlining to reduce shared library size.
+* Miscellaneous optimizations.
+* Set up CI job to build dlls on https://github.com/igbinary/igbinary - at the moment, the infrastructure used by the Windows for php team has been broken for months.
+
 3.2.7 2022-01-12
 =======
 
