@@ -4,7 +4,7 @@
 #
 Name     : php-igbinary
 Version  : 3.2.12
-Release  : 43
+Release  : 44
 URL      : https://pecl.php.net/get/igbinary-3.2.12.tgz
 Source0  : https://pecl.php.net/get/igbinary-3.2.12.tgz
 Summary  : PHP igbinary extension
@@ -61,7 +61,7 @@ make  %{?_smp_mflags}
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/php-igbinary
-cp %{_builddir}/igbinary-%{version}/COPYING %{buildroot}/usr/share/package-licenses/php-igbinary/3fb06c4906ee841b51af78140d85d0e3b523d074 || :
+cp %{_builddir}/igbinary-%{version}/COPYING %{buildroot}/usr/share/package-licenses/php-igbinary/3fb06c4906ee841b51af78140d85d0e3b523d074
 %make_install
 
 
@@ -77,7 +77,7 @@ cp %{_builddir}/igbinary-%{version}/COPYING %{buildroot}/usr/share/package-licen
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20210902/igbinary.so
+/usr/lib64/extensions/no-debug-non-zts-20220829/igbinary.so
 
 %files license
 %defattr(0644,root,root,0755)
