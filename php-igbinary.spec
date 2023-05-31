@@ -4,7 +4,7 @@
 #
 Name     : php-igbinary
 Version  : 3.2.14
-Release  : 53
+Release  : 54
 URL      : https://pecl.php.net/get/igbinary-3.2.14.tgz
 Source0  : https://pecl.php.net/get/igbinary-3.2.14.tgz
 Summary  : PHP igbinary extension
